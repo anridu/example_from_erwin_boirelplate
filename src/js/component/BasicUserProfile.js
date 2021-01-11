@@ -83,6 +83,10 @@ class BasicUserProfile extends React.Component {
 		}
 	}
 
+	componentWillUnmount() {
+		alert("Un gusto, adiós!");
+	}
+
 	increaseAge(event) {
 		alert("The age was increased by 5");
 
