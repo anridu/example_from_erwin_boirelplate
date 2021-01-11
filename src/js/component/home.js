@@ -1,7 +1,7 @@
 import React from "react";
-import UserProfile from "./UserProfile";
-import BasicUserProfile from "./BasicUserProfile";
-import NewUserProfile from "./NewUserProfile";
+import UserProfile from "./UserProfile"; //Function
+import BasicUserProfile from "./BasicUserProfile"; //Clase
+import NewUserProfile from "./NewUserProfile"; //Hook
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -15,8 +15,7 @@ export function Home() {
 				avatarUrl={rigoImage}
 				userPersonalData={{
 					name: "Erwin",
-					lastName: "Aguero",
-					age: 0
+					lastName: "Aguero"
 				}}
 				description={
 					"Lorem Ipsum is simply dummy text of the printing and typesetting industry."

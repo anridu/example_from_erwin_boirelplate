@@ -52,7 +52,7 @@ let NewUserProfile = props => {
 	const [lastName, setLastName] = useState(
 		props.userPersonalData.lastName || "No lastname"
 	);
-	const [age, setAge] = useState(props.userPersonalData.age || 0);
+	const [age, setAge] = useState(props.userPersonalData.age || 15);
 	const [description, setDescription] = useState(
 		props.description ||
 			"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
@@ -60,11 +60,12 @@ let NewUserProfile = props => {
 
 	useEffect(() => {
 		//Executed after each render without conditions
+		alert("useEffect después de cada render!");
 	});
 
 	useEffect(() => {
 		//Exectuted only once
-
+		alert("Se ejecuta una sola vez! DidMount :) :)");
 		return () => alert("Bye bye!"); //clearInterval(interval); //Clean up function executed after the component is not being use anymore.
 	}, []);
 

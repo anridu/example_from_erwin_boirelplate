@@ -58,7 +58,7 @@ class BasicUserProfile extends React.Component {
 			lastName: props.userPersonalData.lastName
 				? props.userPersonalData.lastName
 				: "No Lastname",
-			age: props.userPersonalData.age ? props.userPersonalData.age : 0,
+			age: props.userPersonalData.age ? props.userPersonalData.age : 31,
 			description: props.description ? props.description : "Default text"
 		};
 
